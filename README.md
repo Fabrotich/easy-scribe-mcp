@@ -20,7 +20,7 @@ Remote server, Streamable HTTP. You sign in with your Easy Scribe account (OAuth
 - "Make a user guide in Spanish from this recording: https://files.example.com/onboarding.mp4"
 - "Get my latest Easy Scribe document as Markdown and summarise the steps."
 
-Naming Easy Scribe and the recording in your message helps the assistant pick it. In Claude and ChatGPT an upload box appears in the chat: choose the video there, and it creates the document for you.
+In Claude and ChatGPT, ask for a document and an upload box appears in the chat: drop the video in once, and it creates the document. In ChatGPT you can attach the video to your message instead. Naming Easy Scribe in your message helps the assistant pick it.
 
 Processing takes a few minutes. Every document also lands in your Easy Scribe library, where you can edit it and export to PDF, Word or Markdown.
 
@@ -39,7 +39,7 @@ To start it from a chat, select **+**, then **Easy Scribe**, then **Turn a recor
 1. Open **Settings**, then **Apps & Connectors**, and create a connector. Some plans need **Developer mode** under **Advanced settings** first.
 2. Paste `https://mcp.easyscribe.guide/mcp`, choose **OAuth**, sign in, then **Allow**.
 
-To use it in a chat, type `@Easy Scribe` before your request, or select **+** and choose Easy Scribe.
+To use it in a chat, type `@Easy Scribe` before your request, or select **+** and choose Easy Scribe. Attach the recording to the same message and Easy Scribe gets it straight away.
 
 ### Claude Code
 
@@ -82,8 +82,8 @@ Then run `/mcp` and choose **Authenticate** next to `easy-scribe`.
 
 | Tool | Read-only | What it does |
 | --- | --- | --- |
-| `create_document` | No | Creates a document from a direct video link (.mp4, .webm, .mov) or an uploaded file |
-| `create_upload_url` | No | Starts an upload for a video on your computer, with an upload box in Claude and ChatGPT |
+| `create_document` | No | Creates a document from a direct video link (.mp4, .webm, .mov), an uploaded file, or a video attached in ChatGPT |
+| `create_upload_url` | No | Opens an upload box in Claude and ChatGPT, or gives an upload link elsewhere, for a video on your computer |
 | `get_document` | Yes | Status, and the finished document with screenshot links |
 | `list_documents` | Yes | Your recent documents, filtered by title or status |
 | `list_templates` | Yes | Formats: General, SOP, User guide, Acceptance criteria, Tutorial, Onboarding guide, Release notes, Troubleshooting guide |
