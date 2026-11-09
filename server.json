@@ -3,8 +3,20 @@
   "name": "guide.easyscribe/easy-scribe",
   "title": "Easy Scribe",
   "description": "Turn screen recordings into step-by-step guides, SOPs and user docs with screenshots.",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "websiteUrl": "https://www.easyscribe.guide",
+  "repository": {
+    "url": "https://github.com/Fabrotich/easy-scribe-mcp",
+    "source": "github",
+    "id": "1439969865"
+  },
+  "icons": [
+    {
+      "src": "https://static.easyscribe.guide/Brand%20Assets/easy_scribe_logo.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
