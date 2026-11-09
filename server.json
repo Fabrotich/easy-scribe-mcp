@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "guide.easyscribe/easy-scribe",
   "title": "Easy Scribe",
-  "description": "Turn screen recordings into step-by-step guides, SOPs and user docs with screenshots.",
-  "version": "1.2.0",
+  "description": "Turn screen recordings into step-by-step guides, SOPs, tutorials and user docs with screenshots.",
+  "version": "1.3.0",
   "websiteUrl": "https://www.easyscribe.guide",
   "repository": {
     "url": "https://github.com/Fabrotich/easy-scribe-mcp",
